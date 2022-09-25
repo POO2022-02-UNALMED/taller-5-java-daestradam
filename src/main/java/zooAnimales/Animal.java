@@ -75,14 +75,14 @@ public class Animal {
 	public String movimiento() {
 		return "desplazarse";
 	}
-	/*
-	public String totalPorTipo() {
-		return "Mamiferos: " +  + "\n" + 
-				"Aves: " +  + "\n" +
-				"Reptiles: 2\n" + 
-				"Peces: 2\n" + 
-				"Anfibios: 3";
-	}*/
+	
+	public static String totalPorTipo() {
+		return "Mamiferos: " + Mamifero.cantidadMamiferos() + 
+				"\nAves: " +  Ave.cantidadAves() +
+				"\nReptiles: " + Reptil.cantidadReptiles() + 
+				"\nPeces: "+ Pez.cantidadPeces() + 
+				"\nAnfibios: " + Anfibio.cantidadAnfibios();
+	}
 	
 	@Override
 	public String toString() {
@@ -90,7 +90,8 @@ public class Animal {
 			return "Mi nombre es "+nombre+", tengo una edad de "+edad+", habito en "+habitat+" y mi genero es "+genero;
 		}
 		else {
-			return "Mi nombre es "+nombre+", tengo una edad de "+edad+", habito en "+habitat+" y mi genero es "+genero+", la zona en la que me ubico es "+zona.get(0).getNombre()+", en el "+zona.get(0).getZoo().get(0).getNombre();		
+			return "Mi nombre es "+nombre+", tengo una edad de "+edad+", habito en "+habitat+" y mi genero es "+genero+", "
+					+ "la zona en la que me ubico es "+zona.get(0).getNombre()+", en el "+zona.get(0).getZoo().get(0).getNombre();		
 		}
 	}
 	
