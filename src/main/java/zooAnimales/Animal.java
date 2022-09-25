@@ -82,17 +82,16 @@ public class Animal {
 				"Reptiles: 2\n" + 
 				"Peces: 2\n" + 
 				"Anfibios: 3";
-	}
+	}*/
 	
 	@Override
 	public String toString() {
 		if(zona.isEmpty()) {
-			return "Mi nombre es "+this.nombre+", tengo una edad de "+this.edad+", habito en "+this.habitat+" y mi genero es "+this.genero;
+			return "Mi nombre es "+nombre+", tengo una edad de "+edad+", habito en "+habitat+" y mi genero es "+genero;
 		}
 		else {
-			return "Mi nombre es "+this.nombre+", tengo una edad de "+this.edad+", habito en "+this.habitat+" y mi genero es "+this.genero+", la zona en la que me ubico es "+this.zona+", en el "+this.zona.getZoo;
+			return "Mi nombre es "+nombre+", tengo una edad de "+edad+", habito en "+habitat+" y mi genero es "+genero+", la zona en la que me ubico es "+zona.get(0).getNombre()+", en el "+zona.get(0).getZoo().get(0).getNombre();		
 		}
-	}*/
-	
+	}
 	
 }
