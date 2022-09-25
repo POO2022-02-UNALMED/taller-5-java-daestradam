@@ -12,7 +12,7 @@ public class Animal {
 	private String genero;
 	private ArrayList<Zona> zona;
 	
-	public Animal(int totalAnimales, String nombre, int edad, String habitat, String genero, ArrayList<Zona> zona) {
+	public Animal(String nombre, int edad, String habitat, String genero) {
 		
 	}
 	
@@ -25,7 +25,7 @@ public class Animal {
 	}
 
 	public void setTotalAnimales(int totalAnimales) {
-		this.totalAnimales = totalAnimales;
+		Animal.totalAnimales = totalAnimales;
 	}
 
 	public String getNombre() {
@@ -72,20 +72,21 @@ public class Animal {
 		return "desplazarse";
 	}
 	
-	public void totalPorTipo() {
-		System.out.println("Mamiferos: " + Mamifero);
-		System.out.println("Aves: " + Ave);
-		System.out.println("Reptiles: " + Reptil);
-		System.out.println("Peces: " + Pez);
-		System.out.println("Anfibios: " + Anfibio);
+	public String totalPorTipo() {
+		return "Mamiferos: " +  + "\n" + 
+				"Aves: " +  + "\n" +
+				"Reptiles: 2\n" + 
+				"Peces: 2\n" + 
+				"Anfibios: 3";
 	}
-
+	
+	@Override
 	public String toString() {
 		if(zona.isEmpty()) {
-			return "Mi nombre es #nombre, tengo una edad de #edad, habito en #habitat y mi genero es #genero";
+			return "Mi nombre es "+this.nombre+", tengo una edad de "+this.edad+", habito en "+this.habitat+" y mi genero es "+this.genero;
 		}
 		else {
-			return "Mi nombre es #nombre, tengo una edad de #edad, habito en #habitat y mi genero es #genero, la zona en la que me ubico es #zona, en el #zoo";
+			return "Mi nombre es "+this.nombre+", tengo una edad de "+this.edad+", habito en "+this.habitat+" y mi genero es "+this.genero+", la zona en la que me ubico es "+this.zona+", en el "+this.zona.getZoo;
 		}
 	}
 	

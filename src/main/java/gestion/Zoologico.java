@@ -7,8 +7,9 @@ public class Zoologico {
 	private String ubicacion;
 	private ArrayList<Zona> zonas; // = new ArrayList<>()
 	
-	public Zoologico(String nombre, String ubicacion, ArrayList<Zona> zonas){
-		
+	public Zoologico(String nombre, String ubicacion){
+		this.nombre=nombre;
+		this.ubicacion=ubicacion;
 	}
 	
 	public Zoologico() {
@@ -39,12 +40,16 @@ public class Zoologico {
 		this.zonas = zonas;
 	}
 	
-	public agregarZonas() {
-		
+	public void agregarZonas(Zona zona) {
+		zonas.add(zona);
 	}
 	
-	public cantidadTotalAnimales() {
-		
+	public int cantidadTotalAnimales() {
+		int cant=0;
+		for(Zona zona:zonas) {
+			cant+=zona.cantidadAnimales();
+		}
+		return cant;
 	}
 
 
