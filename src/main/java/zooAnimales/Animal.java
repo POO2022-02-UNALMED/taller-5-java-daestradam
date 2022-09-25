@@ -13,7 +13,11 @@ public class Animal {
 	private ArrayList<Zona> zona;
 	
 	public Animal(String nombre, int edad, String habitat, String genero) {
-		
+		this.nombre=nombre;
+		this.edad=edad;
+		this.habitat=habitat;
+		this.genero=genero;
+		totalAnimales++;
 	}
 	
 	public Animal() {
@@ -71,7 +75,7 @@ public class Animal {
 	public String movimiento() {
 		return "desplazarse";
 	}
-	
+	/*
 	public String totalPorTipo() {
 		return "Mamiferos: " +  + "\n" + 
 				"Aves: " +  + "\n" +
@@ -88,7 +92,7 @@ public class Animal {
 		else {
 			return "Mi nombre es "+this.nombre+", tengo una edad de "+this.edad+", habito en "+this.habitat+" y mi genero es "+this.genero+", la zona en la que me ubico es "+this.zona+", en el "+this.zona.getZoo;
 		}
-	}
+	}*/
 	
 	
 }
