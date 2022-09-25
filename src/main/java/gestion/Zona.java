@@ -9,9 +9,9 @@ public class Zona {
 	private Zoologico[] zoo = new Zoologico[1];
 	private ArrayList<Animal> animales;
 
-	public Zona(String nombre, Zoologico[] zoo) {
+	public Zona(String nombre, Zoologico zoo) {
 		this.nombre=nombre;
-		this.zoo=zoo;
+		this.zoo[0]=zoo;
 	}
 	
 	public Zona() {
