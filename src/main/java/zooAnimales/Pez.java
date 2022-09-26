@@ -17,7 +17,7 @@ public class Pez extends Animal {
 	}
 	
 	public Pez() {
-		
+		listado.add(this);
 	}
 	
 	public ArrayList<Pez> getListado() {
