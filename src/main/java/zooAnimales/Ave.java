@@ -9,15 +9,13 @@ public class Ave extends Animal {
 	private String colorPlumas;
 	
 	public Ave(String nombre, int edad, String habitat, String genero, String colorPlumas) {
-		this.setNombre(nombre);
-		this.setEdad(edad);
-		this.setHabitat(habitat);
-		this.setGenero(genero);
+		super(nombre,edad, habitat, genero);
 		this.colorPlumas=colorPlumas;
+		listado.add(this);
 	}
 	
 	public Ave() {
-		
+		listado.add(this);
 	}
 
 	public ArrayList<Ave> getListado() {
@@ -46,16 +44,12 @@ public class Ave extends Animal {
 	}
 	
 	public static Ave crearHalcon(String nombre, int edad, String genero) {
-		Ave a = new Ave(nombre, edad, "montanas", genero, "cafe glorioso");
-		listado.add(a);
 		halcones++;
-		return a;
+		return new Ave(nombre, edad, "montanas", genero, "cafe glorioso");
 	}
 	
 	public static Ave crearAguila(String nombre, int edad, String genero) {
-		Ave a = new Ave(nombre, edad, "montanas", genero, "blanco y amarillo");
-		listado.add(a);
 		aguilas++;
-		return a;
+		return new Ave(nombre, edad, "montanas", genero, "blanco y amarillo");
 	}
 }
