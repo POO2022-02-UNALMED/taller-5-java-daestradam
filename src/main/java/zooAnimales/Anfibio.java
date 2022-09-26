@@ -20,11 +20,11 @@ public class Anfibio extends Animal {
 		listado.add(this);
 	}
 	
-	public ArrayList<Anfibio> getListado() {
+	public static ArrayList<Anfibio> getListado() {
 		return listado;
 	}
 
-	public void setListado(ArrayList<Anfibio> listado) {
+	public static void setListado(ArrayList<Anfibio> listado) {
 		Anfibio.listado = listado;
 	}
 

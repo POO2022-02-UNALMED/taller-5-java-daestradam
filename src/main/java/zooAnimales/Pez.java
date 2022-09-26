@@ -20,11 +20,11 @@ public class Pez extends Animal {
 		listado.add(this);
 	}
 	
-	public ArrayList<Pez> getListado() {
+	public static  ArrayList<Pez> getListado() {
 		return listado;
 	}
 
-	public void setListado(ArrayList<Pez> listado) {
+	public static  void setListado(ArrayList<Pez> listado) {
 		Pez.listado = listado;
 	}
 

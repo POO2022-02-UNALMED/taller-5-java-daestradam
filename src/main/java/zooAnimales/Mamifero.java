@@ -20,11 +20,11 @@ public class Mamifero extends Animal {
 		listado.add(this);
 	}
 
-	public ArrayList<Mamifero> getListado() {
+	public static  ArrayList<Mamifero> getListado() {
 		return listado;
 	}
 
-	public void setListado(ArrayList<Mamifero> listado) {
+	public static  void setListado(ArrayList<Mamifero> listado) {
 		Mamifero.listado = listado;
 	}
 
