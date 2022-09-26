@@ -26,12 +26,12 @@ public class Zona {
 		this.nombre = nombre;
 	}
 
-	public ArrayList<Zoologico> getZoo() {
-		return zoo;
+	public Zoologico getZoo() {
+		return zoo.get(0);
 	}
 
-	public void setZoo(ArrayList<Zoologico> zoo) {
-		this.zoo = zoo;
+	public void setZoo(Zoologico zoo) {
+		this.zoo.add(zoo);
 	}
 
 	public ArrayList<Animal> getAnimales() {
